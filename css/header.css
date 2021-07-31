@@ -1,0 +1,217 @@
+@import url("https://fonts.googleapis.com/css2?family=Oswald&display=swap");
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.header-container {
+  height: 101px;
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+.header-container nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-family: "Oswald", sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  height: 100%;
+}
+
+.header-container nav .mylogo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.header-container nav .mylogo .logo {
+  width: 32px;
+  height: 32px;
+  cursor: pointer;
+}
+
+.header-container nav .mylogo .logo:hover {
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+  -webkit-transform: rotate(360deg);
+          transform: rotate(360deg);
+}
+
+.header-container nav .mylogo .logo-write {
+  height: 20px;
+  margin-left: 10px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+}
+
+.header-container nav .nav-links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.header-container nav .nav-links li {
+  list-style-type: none;
+  margin-right: 10px;
+}
+
+.header-container nav .nav-links li a {
+  text-decoration: none;
+  color: black;
+}
+
+.header-container nav .nav-links li a::after {
+  content: "";
+  width: 0%;
+  display: block;
+  margin-bottom: -3px;
+  border-bottom: 3px solid black;
+}
+
+.header-container nav .nav-links li a:hover::after {
+  margin-bottom: -4px;
+  content: "";
+  width: 50%;
+  display: block;
+  border-bottom: 3px solid black;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+
+.header-container nav .nav-links .btn-login {
+  font-family: "Oswald", sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  font-size: 1em;
+  border: none;
+  border-radius: 15px;
+  background-color: #c6ffff;
+  cursor: pointer;
+}
+
+.header-container nav .nav-links .btn-login:hover {
+  -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+
+.header-container nav .burger {
+  display: none;
+}
+
+.header-container nav .burger div {
+  width: 25px;
+  height: 3px;
+  background-color: #6b6b6b;
+  margin: 5px;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+
+.smoothScroll {
+  -webkit-transition-duration: 20s;
+          transition-duration: 20s;
+}
+
+@media screen and (max-width: 760px) {
+  body {
+    overflow-x: hidden;
+  }
+  body .header-container nav .nav-links {
+    padding: 20px;
+    top: 80px;
+    right: 0;
+    left: 0;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+    background-color: #fae100;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    width: 100%;
+    position: absolute;
+    -webkit-transition: -webkit-transform 0.5s ease-in-out;
+    transition: -webkit-transform 0.5s ease-in-out;
+    transition: transform 0.5s ease-in-out;
+    transition: transform 0.5s ease-in-out, -webkit-transform 0.5s ease-in-out;
+    -webkit-transform: translateX(-100%);
+            transform: translateX(-100%);
+    border-radius: 0px 0px 0px 30px;
+    -webkit-box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  body .header-container nav .nav-links li {
+    margin-bottom: 10px;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+  }
+  body .header-container nav .nav-links li a {
+    color: #0e0e0e;
+  }
+  body .header-container nav .nav-links .btn-login {
+    font-family: "Oswald", sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    font-size: 1em;
+    border: none;
+    border-radius: 15px;
+    background-color: white;
+    cursor: pointer;
+  }
+  body .header-container nav .burger {
+    display: block;
+    cursor: pointer;
+  }
+}
+
+.nav-active {
+  -webkit-transform: translateX(0%) !important;
+          transform: translateX(0%) !important;
+  -webkit-transition: -webkit-transform 0.5s ease-in-out;
+  transition: -webkit-transform 0.5s ease-in-out;
+  transition: transform 0.5s ease-in-out;
+  transition: transform 0.5s ease-in-out, -webkit-transform 0.5s ease-in-out;
+}
+
+.toggle .line1 {
+  -webkit-transform: rotate(45deg) translate(0, 11px);
+          transform: rotate(45deg) translate(0, 11px);
+}
+
+.toggle .line2 {
+  opacity: 0;
+}
+
+.toggle .line3 {
+  -webkit-transform: rotate(-45deg) translate(0, -11px);
+          transform: rotate(-45deg) translate(0, -11px);
+}
+/*# sourceMappingURL=header.css.map */

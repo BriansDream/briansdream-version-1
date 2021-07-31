@@ -1,0 +1,167 @@
+@import url("https://fonts.googleapis.com/css2?family=Arimo&family=Oswald&display=swap");
+footer {
+  font-family: 'Arimo', sans-serif;
+  padding: 10px;
+}
+
+footer .footer-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+footer .footer-content .left-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  overflow: hidden;
+}
+
+footer .footer-content .left-content a img {
+  width: 32px;
+  height: 32px;
+  margin-right: 8px;
+  -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 50%;
+}
+
+footer .footer-content .left-content a img:hover {
+  -webkit-transition: 1s all ease-in-out;
+  transition: 1s all ease-in-out;
+  -webkit-transform: rotate(-360deg);
+          transform: rotate(-360deg);
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+footer .footer-content .right-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+footer .footer-content .right-content a {
+  text-decoration: none;
+  color: black;
+}
+
+footer .footer-content .right-content a img {
+  max-width: 32px;
+  margin-right: 4px;
+  -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 30px;
+}
+
+footer .footer-content .right-content a img:hover {
+  -webkit-transition: all 1s ease-in-out;
+  transition: all 1s ease-in-out;
+  -webkit-transform: rotate(-360deg);
+          transform: rotate(-360deg);
+}
+
+.modal-bg {
+  background-color: rgba(255, 146, 146, 0.2);
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  z-index: 10;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-family: 'Arimo', sans-serif;
+  visibility: hidden;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+  opacity: 0.5;
+}
+
+.modal-bg .modal-content {
+  width: 20%;
+  background-color: white;
+  height: 30%;
+  border-radius: 30px;
+  -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  position: relative;
+  text-align: center;
+}
+
+.modal-bg .modal-content img {
+  width: 128px;
+  height: 128px;
+  border-radius: 50%;
+  margin-bottom: 10px;
+  -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+}
+
+.modal-bg .modal-content img:hover {
+  -webkit-transition: all 0.9s ease-in-out;
+  transition: all 0.9s ease-in-out;
+  -webkit-transform: rotate(-360deg);
+          transform: rotate(-360deg);
+}
+
+.modal-bg .modal-content h3 {
+  font-weight: 900;
+  margin-bottom: 2px;
+  text-transform: uppercase;
+  text-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.modal-bg .modal-content h6 {
+  font-size: 0.8em;
+  font-weight: 100;
+}
+
+.modal-bg .modal-content h1 {
+  position: absolute;
+  top: 0;
+  right: 12px;
+  margin-top: 2px;
+  cursor: pointer;
+}
+
+.bgactive {
+  visibility: visible;
+  opacity: 1;
+}
+
+@media screen and (max-width: 1024px) {
+  .modal-bg .modal-content {
+    height: 300px;
+    width: 350px;
+  }
+}
+/*# sourceMappingURL=footer.css.map */
